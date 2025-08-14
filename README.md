@@ -33,7 +33,7 @@ The report offers a detailed breakdown of employee data by gender, job type, edu
 ---
 
 ## 📂 Dashboard Preview
-![image alt](
+![image alt](https://github.com/MithinRC/Human-Resources-Report-Salary-Employee-Analysis/blob/9f15e006d4b91462f733f77c2f67290698040203/Screenshot%202025-08-14%20130244.png)
 
 ---
 
