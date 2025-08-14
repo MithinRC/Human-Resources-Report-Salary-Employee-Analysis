@@ -1,0 +1,10 @@
+let
+Source = List.Dates(StartDate, DurationDays, #duration(1, 0, 0, 0)),
+StartDate = Date.StartOfYear(List.Min(#"MY FACT TABLE"[MY DATE COLUMN])),
+EndDate =Date.EndOfYear(List.Max(#"MY FACT TABLE"[MY DATE COLUMN])),
+DurationDays = Duration.Days(EndDate - StartDate)+ 1,
+ToTable = Table.FromList(Source, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+#"Renamed Column1 to Date" = Table.RenameColumns(ToTable,{{"Column1", "Date"}}),
+#"Changed Data Type From Text To Date" = Table.TransformColumnTypes(#"Renamed Column1 to Date",{{"Date", type date}})
+in
+#"Changed Data Type From Text To Date"
