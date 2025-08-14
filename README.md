@@ -55,4 +55,5 @@ The report offers a detailed breakdown of employee data by gender, job type, edu
 ## 📬 Contact
 **Author:** Mithin R C  
 **Email:** mithinchoodappa@gmail.com  
-**LinkedIn:** [Your LinkedIn Profile]  
+
+**LinkedIn:** linkedin.com/in/mithin-rc  
